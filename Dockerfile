@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y \
     php-xml-parser \
     php5-common \
     php5-cli \
+    php5-curl \
     php5-gd \
     php5-intl \
     php5-mysql \
