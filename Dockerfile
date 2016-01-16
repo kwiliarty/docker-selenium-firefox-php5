@@ -25,6 +25,8 @@ RUN apt-get update && apt-get install -y \
     php5-xmlrpc \
     xvfb
 
+RUN apt-get install -y --force-yes firefox=37.0+build2-0ubuntu1
+
 ADD https://getcomposer.org/composer.phar /usr/local/bin/composer
 RUN cd /usr/local/bin && \
         chmod +x composer
