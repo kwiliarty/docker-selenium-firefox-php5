@@ -27,6 +27,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN apt-get install -y --force-yes firefox=37.0+build2-0ubuntu1
 
+ADD http://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar /opt/selenium/selenium-server-standalone.jar
+
 ADD https://getcomposer.org/composer.phar /usr/local/bin/composer
 RUN cd /usr/local/bin && \
         chmod +x composer
